@@ -1,0 +1,64 @@
+.main-header {
+    background-color: black;
+}
+
+
+body {
+    direction: rtl;
+    margin-top: 140px;
+}
+
+#heder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(97, 166, 122);
+    height: 100px;
+    font-size: large;
+    color: rgb(82, 79, 78);
+}
+
+#footer {
+    border: solid black 0.5px;
+    margin: 5% 10px 30px 10px;
+    text-align: center;
+    background: hsl(0, 0%, 96%);
+}
+
+
+#footer>div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#footer>div>div {
+    display: flex;
+    align-items: center;
+}
+
+#footer>div>div>p {
+    margin: 0;
+}
+
+#footer>p {
+    font-weight: 500;
+}
+
+#logo >a {
+        text-decoration: none;
+        color: inherit;
+    
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    div{
+        font-size: medium;
+        color: rgb(82, 79, 78);
+    }
+}

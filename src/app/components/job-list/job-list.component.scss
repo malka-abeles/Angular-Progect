@@ -1,0 +1,40 @@
+// Base styling for the entire page
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  // Styling for the filter section
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  // Additional styles for specific elements
+  #allJobsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .app-job {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  // Media query for responsiveness
+  @media (max-width: 768px) {
+    select {
+      width: 100%;
+    }
+  }
+  

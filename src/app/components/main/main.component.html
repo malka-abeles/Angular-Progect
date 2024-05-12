@@ -1,0 +1,29 @@
+<div id="heder">
+  <div id="currentUser">hello {{currentUser?.name}}</div>
+  <button>
+    <div id="jobField" (click)="jobsByField()">job field: {{jobFieldes(currentUser!.fields)}}</div>
+  </button>
+  <div id="counterResum">num of cv yuo send: {{count$ | async}}</div>
+  <div id="logo"><a routerLink="/login"><h1>🫱🏽‍🫲🏼</h1></a></div>
+</div>
+
+
+<router-outlet>
+</router-outlet>
+
+
+<div id="footer">
+    <h3>שומרים על קשר</h3>
+    <p>התקשרו או כתבו אלינו</p>
+    <div>
+      <div> 
+        <p>טלפון: 1-700-557-555</p>
+      </div>
+      <div> 
+        <p> mmm&#64;gmail.com:אימייל</p>
+      </div>
+      <div> 
+        <p>שם: מלכה אבלס</p>
+      </div>
+    </div>
+</div>

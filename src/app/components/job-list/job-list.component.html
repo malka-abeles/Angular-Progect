@@ -1,0 +1,51 @@
+<!-- <h3>Filter jobs by</h3>
+<select name="" id="" (change)="onOptionSelected($event.target)">
+    <option value="op0" disabled selected>Filter jobs by</option>
+    <option value="fields">fields</option>
+    <option value="area">area</option>
+</select><br>
+
+<select name="" id="" *ngIf="FilterJobsByArea" (change)="onOptionSelectedArea($event.target)" >
+    <option value="op0" disabled selected></option>
+    <option value="Software Development">Software Development</option>
+    <option value="Recruitment">Recruitment</option>
+    <option value="Accounting">Accounting</option>
+</select>
+
+<select name="" id="" *ngIf="FilterJobsByFeild" (change)="onOptionSelectedField($event.target)">
+    <option value="0">{{jobFieldes(0)}}</option>
+    <option value="1">{{jobFieldes(1)}}</option>
+    <option value="2">{{jobFieldes(2)}}</option>
+    <option value="3">{{jobFieldes(3)}}</option>
+    <option value="4">{{jobFieldes(4)}}</option>
+</select>
+
+<div *ngFor="let c of allJobs">
+    <app-job [_jobData]="c"></app-job>
+</div> -->
+
+
+<h3>Filter jobs by</h3>
+<select name="filterType" (change)="onOptionSelected($event.target)">
+  <option value="op0" disabled selected>Filter jobs by</option>
+  <option value="fields">Fields</option>
+  <option value="area">Area</option>
+</select><br>
+
+<select name="filterArea" *ngIf="FilterJobsByArea" (change)="onOptionSelectedArea($event.target)">
+  <option value="op0" disabled selected>Select Area</option>
+  <option value="Software Development">Software Development</option>
+  <option value="Recruitment">Recruitment</option>
+  <option value="Accounting">Accounting</option>
+</select>
+
+<select name="filterField" *ngIf="FilterJobsByFeild" (change)="onOptionSelectedField($event.target)">
+    <option value="op0" disabled selected>Select field</option>
+    <option *ngFor="let field of jobFieldKeys; let i = index" [value]="i">{{ jobFieldes(i) }}</option>
+</select>
+
+<div id="allJobsContainer">
+  <div *ngFor="let job of allJobs" class="app-job">
+    <app-job [_jobData]="job"></app-job>
+  </div>
+</div>
