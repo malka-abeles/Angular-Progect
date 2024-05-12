@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from '../../../src/app/components/login/login.component';
 import { JobComponent } from './components/job/job.component';
 import { JobListComponent } from './components/job-list/job-list.component';
 import { RouterModule } from '@angular/router';
@@ -12,7 +12,7 @@ import { JobDitelsComponent } from './components/job-ditels/job-ditels.component
 import { HttpClientModule } from '@angular/common/http';
 import { JobsService } from './services/jobs.service';
 import { userService } from './services/users.service';
-import { MainComponent } from './components/main/main.component';
+import { MainComponent } from '../../../src/app/components/main/main.component';
 import { AuthGuard } from './services/AuthGuard.service';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 

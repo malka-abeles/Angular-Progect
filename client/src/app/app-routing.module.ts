@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { MainComponent } from './components/main/main.component';
+import { LoginComponent } from '../../../src/app/components/login/login.component';
+import { MainComponent } from '../../../src/app/components/main/main.component';
 import { JobListComponent } from './components/job-list/job-list.component';
 import { JobDitelsComponent } from './components/job-ditels/job-ditels.component';
 import { AuthGuard } from './services/AuthGuard.service';
